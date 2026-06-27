@@ -1,0 +1,6 @@
+services:
+  profil:
+    build: .
+    container_name: faudi-web
+    ports:
+      - "8082:80"
