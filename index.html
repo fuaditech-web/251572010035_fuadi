@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | M Fuadi Ma'suf</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#081221;
+    color:#fff;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0b162c;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    z-index:999;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#2ea3ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#2ea3ff;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:120px 10%;
+}
+
+.photo img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #2ea3ff;
+    animation:float 3s ease-in-out infinite;
+    box-shadow:0 0 40px rgba(46,163,255,.4);
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+.hero-text h3{
+    font-size:28px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#2ea3ff;
+}
+
+.hero-text h4{
+    color:#bbb;
+    margin:10px 0;
+}
+
+.hero-text p{
+    margin-top:20px;
+    max-width:500px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#2ea3ff;
+    color:white;
+    padding:14px 35px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+/* CONTENT */
+
+.container{
+    width:85%;
+    margin:auto;
+}
+
+.card{
+    background:#102038;
+    margin-bottom:30px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+.card h2{
+    color:#2ea3ff;
+    margin-bottom:20px;
+}
+
+/* TAG */
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.tag{
+    background:#2ea3ff;
+    padding:10px 20px;
+    border-radius:30px;
+}
+
+/* SKILL */
+
+.skill{
+    margin-bottom:20px;
+}
+
+.bar{
+    width:100%;
+    background:#1b3555;
+    height:12px;
+    border-radius:20px;
+    margin-top:10px;
+}
+
+.progress{
+    background:#2ea3ff;
+    height:12px;
+    border-radius:20px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#999;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:20px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <i class="fa-solid fa-code"></i> Fuadi
+    </div>
+
+    <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+
+    <div class="photo">
+        <!-- GANTI FOTO DI SINI -->
+        <img src="foto.jpg">
+    </div>
+
+    <div class="hero-text">
+
+        <h3>Halo, Saya</h3>
+
+        <h1>M Fuadi Ma'suf</h1>
+
+        <h4>NIM : 251572010035</h4>
+
+        <h4>Mahasiswa Sistem Informasi</h4>
+
+        <p>
+            Mahasiswa STMIK TAZKIA yang memiliki
+            minat pada Web Development,
+            Cloud Computing, DevOps,
+            dan teknologi modern.
+        </p>
+
+        <a href="#about" class="btn">
+            Tentang Saya
+        </a>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+<div class="card" id="about">
+
+<h2>
+<i class="fa-solid fa-user"></i>
+Profil
+</h2>
+
+<p><b>Nama :</b> M Fuadi Ma'suf</p>
+<br>
+
+<p><b>NIM :</b> 251572010035</p>
+<br>
+
+<p><b>Program Studi :</b> Sistem Informasi</p>
+<br>
+
+<p><b>Perguruan Tinggi :</b> STMIK TAZKIA</p>
+<br>
+
+<p><b>Alasan memilih jurusan :</b>
+Saya tertarik pada dunia teknologi,
+pengembangan website,
+serta transformasi digital.</p>
+
+<br>
+
+<p><b>Motivasi :</b>
+Menjadi profesional di bidang IT
+dan terus belajar teknologi terbaru.</p>
+
+<br>
+
+<p><b>Cita-cita :</b>
+Menjadi Software Engineer,
+Cloud Engineer,
+dan Entrepreneur Teknologi.</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-laptop-code"></i>
+Minat Bidang IT
+</h2>
+
+<div class="tags">
+<div class="tag">Web Development</div>
+<div class="tag">Cloud Computing</div>
+<div class="tag">DevOps</div>
+<div class="tag">Linux</div>
+<div class="tag">Cyber Security</div>
+</div>
+
+</div>
+
+<div class="card" id="skill">
+
+<h2>
+<i class="fa-solid fa-chart-simple"></i>
+Skills
+</h2>
+
+<div class="skill">
+HTML/CSS
+<div class="bar">
+<div class="progress" style="width:90%"></div>
+</div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="bar">
+<div class="progress" style="width:75%"></div>
+</div>
+</div>
+
+<div class="skill">
+Linux
+<div class="bar">
+<div class="progress" style="width:80%"></div>
+</div>
+</div>
+
+<div class="skill">
+Docker
+<div class="bar">
+<div class="progress" style="width:70%"></div>
+</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-graduation-cap"></i>
+Pendidikan
+</h2>
+
+<p>
+2025 - Sekarang
+</p>
+
+<p>
+S1 Sistem Informasi
+</p>
+
+<p>
+STMIK TAKIA
+</p>
+
+</div>
+
+<div class="card" id="contact">
+
+<h2>
+<i class="fa-solid fa-envelope"></i>
+Kontak
+</h2>
+
+<p>
+<i class="fa-brands fa-instagram"></i>
+@fuaditech.web
+</p>
+
+<br>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+fuaditech@gmail.com
+</p>
+
+<br>
+
+<p>
+<i class="fa-solid fa-globe"></i>
+fuaditech.com
+</p>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 M Fuadi Ma'suf | NIM 251572010035 | STMIK TAZKIA
+</footer>
+
+</body>
+</html>
+```
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | M Fuadi Ma'suf</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#081221;
+    color:#fff;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0b162c;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    z-index:999;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#2ea3ff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#2ea3ff;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:120px 10%;
+}
+
+.photo img{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #2ea3ff;
+    animation:float 3s ease-in-out infinite;
+    box-shadow:0 0 40px rgba(46,163,255,.4);
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+.hero-text h3{
+    font-size:28px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#2ea3ff;
+}
+
+.hero-text h4{
+    color:#bbb;
+    margin:10px 0;
+}
+
+.hero-text p{
+    margin-top:20px;
+    max-width:500px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#2ea3ff;
+    color:white;
+    padding:14px 35px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+/* CONTENT */
+
+.container{
+    width:85%;
+    margin:auto;
+}
+
+.card{
+    background:#102038;
+    margin-bottom:30px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+.card h2{
+    color:#2ea3ff;
+    margin-bottom:20px;
+}
+
+/* TAG */
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.tag{
+    background:#2ea3ff;
+    padding:10px 20px;
+    border-radius:30px;
+}
+
+/* SKILL */
+
+.skill{
+    margin-bottom:20px;
+}
+
+.bar{
+    width:100%;
+    background:#1b3555;
+    height:12px;
+    border-radius:20px;
+    margin-top:10px;
+}
+
+.progress{
+    background:#2ea3ff;
+    height:12px;
+    border-radius:20px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#999;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:20px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <i class="fa-solid fa-code"></i> Fuadi
+    </div>
+
+    <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+
+    <div class="photo">
+        <!-- GANTI FOTO DI SINI -->
+        <img src="foto.jpg">
+    </div>
+
+    <div class="hero-text">
+
+        <h3>Halo, Saya</h3>
+
+        <h1>M Fuadi Ma'suf</h1>
+
+        <h4>NIM : 251572010035</h4>
+
+        <h4>Mahasiswa Sistem Informasi</h4>
+
+        <p>
+            Mahasiswa STMIK TAZKIA yang memiliki
+            minat pada Web Development,
+            Cloud Computing, DevOps,
+            dan teknologi modern.
+        </p>
+
+        <a href="#about" class="btn">
+            Tentang Saya
+        </a>
+
+    </div>
+
+</section>
+
+<div class="container">
+
+<div class="card" id="about">
+
+<h2>
+<i class="fa-solid fa-user"></i>
+Profil
+</h2>
+
+<p><b>Nama :</b> M Fuadi Ma'suf</p>
+<br>
+
+<p><b>NIM :</b> 251572010035</p>
+<br>
+
+<p><b>Program Studi :</b> Sistem Informasi</p>
+<br>
+
+<p><b>Perguruan Tinggi :</b> STMIK TAZKIA</p>
+<br>
+
+<p><b>Alasan memilih jurusan :</b>
+Saya tertarik pada dunia teknologi,
+pengembangan website,
+serta transformasi digital.</p>
+
+<br>
+
+<p><b>Motivasi :</b>
+Menjadi profesional di bidang IT
+dan terus belajar teknologi terbaru.</p>
+
+<br>
+
+<p><b>Cita-cita :</b>
+Menjadi Software Engineer,
+Cloud Engineer,
+dan Entrepreneur Teknologi.</p>
+
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-laptop-code"></i>
+Minat Bidang IT
+</h2>
+
+<div class="tags">
+<div class="tag">Web Development</div>
+<div class="tag">Cloud Computing</div>
+<div class="tag">DevOps</div>
+<div class="tag">Linux</div>
+<div class="tag">Cyber Security</div>
+</div>
+
+</div>
+
+<div class="card" id="skill">
+
+<h2>
+<i class="fa-solid fa-chart-simple"></i>
+Skills
+</h2>
+
+<div class="skill">
+HTML/CSS
+<div class="bar">
+<div class="progress" style="width:90%"></div>
+</div>
+</div>
+
+<div class="skill">
+JavaScript
+<div class="bar">
+<div class="progress" style="width:75%"></div>
+</div>
+</div>
+
+<div class="skill">
+Linux
+<div class="bar">
+<div class="progress" style="width:80%"></div>
+</div>
+</div>
+
+<div class="skill">
+Docker
+<div class="bar">
+<div class="progress" style="width:70%"></div>
+</div>
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>
+<i class="fa-solid fa-graduation-cap"></i>
+Pendidikan
+</h2>
+
+<p>
+2025 - Sekarang
+</p>
+
+<p>
+S1 Sistem Informasi
+</p>
+
+<p>
+STMIK TAKIA
+</p>
+
+</div>
+
+<div class="card" id="contact">
+
+<h2>
+<i class="fa-solid fa-envelope"></i>
+Kontak
+</h2>
+
+<p>
+<i class="fa-brands fa-instagram"></i>
+@fuaditech.web
+</p>
+
+<br>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+fuaditech@gmail.com
+</p>
+
+<br>
+
+<p>
+<i class="fa-solid fa-globe"></i>
+fuaditech.com
+</p>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 M Fuadi Ma'suf | NIM 251572010035 | STMIK TAZKIA
+</footer>
+
+</body>
+</html>
